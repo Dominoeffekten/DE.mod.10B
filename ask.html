@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, minimum-scale=1.0">
         <script type='module' src='./second.js'></script>
         <style>
-            section{
-                text-align: center;
+            input{
+                margin-top: 20px;
             }
-            img{
+            .center{
                 height: auto;
-                width: 50%;
-                margin: 3%;
+                width: 18%;
+                margin: 0 auto;
             }
             a{
                 outline: 1px #000 solid;
@@ -22,11 +22,13 @@
     </head>
     <body>
         <section>
-            <h1>Quiz</h1>
-            <p>How much do you know about JavaScript? <br>
-            Test it here</p>
-            <a href="ask.html">Start</a> <br>
-            <img src="pc.jpeg">
+            <div class="center">
+                <h1>Quiz</h1>
+                <div id="yourScore"></div>
+                <div id="quiz"></div>
+                <br>
+            <a href="index.html">Frontpage</a> 
+            </div>
         </section>
     </body>
 </html>

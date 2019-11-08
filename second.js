@@ -58,7 +58,7 @@ things.push(quiz8);
  
 
 ///Tjek spørgsmål + sæt score
-$('yourScore').innerHTML = 'Korrekte svar: ' + score + ' ud af 8';
+$('yourScore').innerHTML = 'Correct: ' + score + ' out of 8' ;
 
 function start(){
     $('formid').addEventListener('change', function(){
@@ -68,7 +68,7 @@ function start(){
         for(var i = 0; i < things.length; i++){
             if(things[i].correct() == true ){
                 score++;
-                $('yourScore').innerHTML = 'Korrekte svar: ' + score + ' ud af 8' ;
+                $('yourScore').innerHTML = 'Correct: ' + score + ' out of 8' ;
             }
             //Går videre til næste spg,når der bliver valgt et spg.
             if($('a').checked == true || $('b').checked == true || $('c').checked == true){

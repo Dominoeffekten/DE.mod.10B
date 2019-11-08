@@ -19,7 +19,7 @@ const Quiz = { //Lav spørgsmål
         this.value3 = value3;
     },
     vis: function(){ //Vis spørgsmål
-        return `<h3>${this.navn}</h3> <p> <form id="formid"> <input name="text" type="radio" value="${this.value1}" id="a">${this.sporg1} <br> <input name="text" type="radio" value="${this.value2}" id="b">${this.sporg2} <br> <input name="text" type="radio" value="${this.value3}" id="c">${this.sporg3} </form> </p>`;
+        return `<h3>${this.navn}</h3> <form id="formid"> <input name="text" type="radio" value="${this.value1}" id="a">${this.sporg1} <br> <input name="text" type="radio" value="${this.value2}" id="b">${this.sporg2} <br> <input name="text" type="radio" value="${this.value3}" id="c">${this.sporg3} </form>`;
     },
     
     check: function(){ //Tjek om der er trykket på alle
